@@ -1,6 +1,8 @@
 # IndexableRecyclerView
 A RecyclerView with indexable, sticky and many other features.
 
+> 本项目 fork 自 [IndexableRecyclerView](https://github.com/YoKeyword/IndexableRecyclerView)，目的为 重构 AndroidX，maven依赖。
+
 **轻松实现：选择城市，选择联系人等需要索引的功能**
 
 > 替代之前的IndexableStickyListView(移至该[分支](https://github.com/YoKeyword/IndexableRecyclerView/tree/listview)),进行大幅度重构，性能优化，更易使用的API，更易拓展的HeaderView/FooterView等等！

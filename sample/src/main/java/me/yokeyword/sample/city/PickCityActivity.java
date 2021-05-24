@@ -1,21 +1,21 @@
 package me.yokeyword.sample.city;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.SearchView;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.recyclerview.widget.GridLayoutManager;
+
 import com.github.promeg.pinyinhelper.Pinyin;
-import com.github.promeg.tinypinyin.lexicons.android.cncity.CnCityDict;
+import com.github.promeg.tinypinyin.lexicons.java.cncity.CnCityDict;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 import me.yokeyword.indexablerv.EntityWrapper;
 import me.yokeyword.indexablerv.IndexableAdapter;
 import me.yokeyword.indexablerv.IndexableLayout;
@@ -50,7 +50,7 @@ public class PickCityActivity extends AppCompatActivity {
         indexableLayout.setLayoutManager(new GridLayoutManager(this, 2));
 
         // 多音字处理
-        Pinyin.init(Pinyin.newConfig().with(CnCityDict.getInstance(this)));
+        Pinyin.init(Pinyin.newConfig().with(CnCityDict.getInstance()));
 
         // 添加自定义多音字词典
 //        Pinyin.init(Pinyin.newConfig()
